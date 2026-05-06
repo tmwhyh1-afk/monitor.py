@@ -2,17 +2,17 @@ import requests
 from bs4 import BeautifulSoup
 import os
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHAT_ID = os.getenv("CHAT_ID")
+BOT_TOKEN = os.getenv("8792686474:AAFmWTm7If7pDpHy0_8M3cJT1YvlyO5RZjI")
+CHAT_ID = os.getenv("5951518400")
 
 URL = "https://tl.logisty-iq.com"
 
 SAVE_FILE = "data.txt"
 
 def send(msg):
-    api = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+    api = f"https://api.telegram.org/bot{8792686474:AAFmWTm7If7pDpHy0_8M3cJT1YvlyO5RZjI}/sendMessage"
     requests.post(api, data={
-        "chat_id": CHAT_ID,
+        "chat_id": 5951518400,
         "text": msg
     })
 
